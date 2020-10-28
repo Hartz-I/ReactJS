@@ -14,3 +14,5 @@ npm run build makes a production ready build
 //installed prettier format
 
 //search format: format in paste. format in save
+
+//devtools->compnents( will be able to see what components are being used

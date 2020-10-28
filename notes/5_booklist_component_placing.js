@@ -2,15 +2,11 @@
 import React from "react";
 import ReactDom from "react-dom"; //connect with root div in index.html
 
-// CSS
-import "./index.css";
-function BookList() {
+// nested Components and react tools
+
+function BookList() { //will create as many instances of the book cmponent which has the other components in it!
   return (
-    <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+    <section>
       <Book />
       <Book />
       <Book />
@@ -22,8 +18,9 @@ function BookList() {
 }
 
 const Book = () => {
+  //we can use this as many times we want and can change it once to change all!
   return (
-    <article className="book">
+    <article>
       <Image />
       <Title />
       <Author />
